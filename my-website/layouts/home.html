@@ -1,0 +1,115 @@
+{{ define "main" }}
+<main class="profile-home">
+    <section class="profile-hero" aria-labelledby="intro-title">
+        <p class="profile-kicker">Computer science, robotics, and research</p>
+        <h1 id="intro-title">Hi, I'm Aarush.</h1>
+        <p class="profile-lede">I build software that helps robots sense their surroundings, move reliably, and support better decisions.</p>
+        <nav class="profile-actions category-actions" aria-label="Portfolio sections">
+            <a class="profile-button profile-button-primary" href="#projects">Projects</a>
+            <a class="profile-button" href="#research">Research</a>
+            <a class="profile-button" href="#civic-service">Civic Service</a>
+            <a class="profile-button" href="{{ "resume.pdf" | relURL }}" download>Resume PDF</a>
+        </nav>
+    </section>
+
+    <section class="profile-section" id="about" aria-labelledby="about-title">
+        <p class="profile-kicker">About me</p>
+        <h2 id="about-title">I like difficult problems and useful results.</h2>
+        <div class="profile-copy">
+            <p>I'm a Princeton computer science student and robotics software lead from Robbinsville, New Jersey. I work on autonomous systems, computer vision, data, and strategy.</p>
+            <p>Outside class and build season, I mentor developers, test ideas, and help teams turn technical work into decisions they can use.</p>
+        </div>
+        <div class="profile-facts" aria-label="Quick facts">
+            <span>Princeton University | B.S.E. Computer Science</span>
+            <span>Java | Python | OpenCV | ROS</span>
+            <span>English | Spanish | Telugu</span>
+        </div>
+    </section>
+
+    <section class="profile-section" id="education" aria-labelledby="education-title">
+        <p class="profile-kicker">Education</p>
+        <h2 id="education-title">A short academic snapshot.</h2>
+        <div class="education-list">
+            {{ range where .Site.RegularPages "Params.group" "education" }}
+                <article class="education-item">
+                    <div>
+                        <p class="project-card-meta">{{ .Params.period }}</p>
+                        <h3>{{ .Title }}</h3>
+                        <p>{{ .Params.institution }}</p>
+                    </div>
+                    <p>{{ .Params.summary }}</p>
+                </article>
+            {{ end }}
+        </div>
+    </section>
+
+    <section class="profile-section" id="projects" aria-labelledby="projects-title">
+        <div class="profile-section-heading">
+            <div>
+                <p class="profile-kicker">Projects</p>
+                <h2 id="projects-title">Software, robots, and strategy.</h2>
+            </div>
+            <a class="profile-text-link" href="{{ "projects/" | relURL }}">View all projects -></a>
+        </div>
+        <div class="project-grid">
+            {{ range where .Site.RegularPages "Params.group" "project" }}
+                <a class="project-card" href="{{ .Params.external | default .RelPermalink }}" {{ with .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
+                    <div class="project-card-media"><span>{{ .Params.category | default "Project" }}</span></div>
+                    <div class="project-card-body">
+                        <p class="project-card-meta">{{ .Params.season | default .Params.period | default "Selected work" }}</p>
+                        <h3>{{ .Title }}</h3>
+                        <p>{{ .Params.summary }}</p>
+                        <span class="profile-text-link">{{ if .Params.external }}View project ->{{ else }}Read project ->{{ end }}</span>
+                    </div>
+                </a>
+            {{ end }}
+        </div>
+    </section>
+
+    <section class="profile-section" id="research" aria-labelledby="research-title">
+        <p class="profile-kicker">Research</p>
+        <h2 id="research-title">A published study built from simulation and testing.</h2>
+        <article class="research-feature">
+            <p class="project-card-meta">IEEE MIT Undergraduate Research Technology Conference | Presented October 2025</p>
+            <h3>PID Control Optimization and Trajectory Tracking for Autonomous Differential Drive Robots</h3>
+            <p>I co-authored a non-linear PID controller with moving integral windows, velocity-dependent target yaws, and anti-windup limits. We compared A* and Dijkstra path generation, modeled LiDAR obstacle avoidance in ROS GazeboSim, and tested the controller with TurtleBot Vicon tracking and matched-pairs tests at p &lt; 0.01.</p>
+            <div class="research-links">
+                <a class="profile-button" href="https://ieeexplore.ieee.org/document/11533106" target="_blank" rel="noopener noreferrer">Research details</a>
+                <a class="profile-button profile-button-primary" href="https://drive.google.com/file/d/18ED5a_aI4rQM_JSxM_MhHVoMt1Xh2ltn/view" target="_blank" rel="noopener noreferrer">Extended paper</a>
+                <a class="profile-button" href="https://youtu.be/6KWDjNa425o" target="_blank" rel="noopener noreferrer">Rutgers symposium video</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="profile-section" id="civic-service" aria-labelledby="civic-service-title">
+        <p class="profile-kicker">Civic Service</p>
+        <h2 id="civic-service-title">Technical work that helps people and teams.</h2>
+        <div class="volunteer-list">
+            {{ range sort (where .Site.RegularPages "Params.group" "civic") "Params.order" }}
+                <article class="volunteer-item">
+                    <div>
+                        <p class="project-card-meta">{{ .Params.period | default .Params.eyebrow }}</p>
+                        <h3>{{ .Title }}</h3>
+                        <p>{{ .Params.organization }}</p>
+                    </div>
+                    <ul>
+                        {{ range .Params.highlights }}<li>{{ . }}</li>{{ end }}
+                    </ul>
+                </article>
+            {{ end }}
+        </div>
+    </section>
+
+    <section class="profile-section profile-contact" id="contact" aria-labelledby="contact-title">
+        <p class="profile-kicker">Contact</p>
+        <h2 id="contact-title">Have a problem worth solving?</h2>
+        <p>Send me a note about robotics, research, software, or a project that needs a technical partner.</p>
+        <a class="profile-button profile-button-primary" href="mailto:am6927@princeton.edu">am6927@princeton.edu</a>
+    </section>
+</main>
+
+{{ partial "footer/footer" . }}
+{{ end }}
+
+{{ define "right-sidebar" }}
+{{ end }}

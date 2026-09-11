@@ -1,0 +1,96 @@
+baseURL = "https://example.org/"
+title = "Aarush Mane"
+theme = "hugo-theme-stack"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+enableEmoji = true
+
+[pagination]
+  pagerSize = 6
+
+[permalinks]
+  projects = "/projects/:slug/"
+
+[params]
+  author = "Aarush Mane"
+  description = "Aarush Mane's personal portfolio, robotics work, research, and writing."
+  keywords = "Aarush Mane, computer science, robotics, software, research"
+  mainSections = ["projects"]
+  rssFullContent = true
+
+  [params.sidebar]
+    subtitle = "Computer science student, robotics builder, and researcher."
+    emoji = "*"
+    compact = false
+
+  [params.colorScheme]
+    toggle = true
+    default = "auto"
+
+  [params.article]
+    headingAnchor = true
+    math = false
+    toc = false
+    readingTime = false
+
+  [params.footer]
+    since = 2026
+    customText = "Built with Hugo and Theme Stack."
+
+  [params.widgets]
+    homepage = []
+    page = []
+
+  [params.comments]
+    enabled = false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+    [menu.main.params]
+      icon = "home"
+
+  [[menu.main]]
+    name = "About"
+    url = "/#about"
+    weight = 2
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+
+  [[menu.social]]
+    name = "GitHub"
+    url = "https://github.com/aarushmane"
+    weight = 1
+    [menu.social.params]
+      icon = "brand-github"
+      newTab = true
+
+  [[menu.social]]
+    name = "IEEE Xplore"
+    url = "https://ieeexplore.ieee.org/author/120619555333829"
+    weight = 2
+    [menu.social.params]
+      icon = "link"
+      newTab = true
+
+  [[menu.social]]
+    name = "Download resume"
+    url = "/resume.pdf"
+    weight = 3
+    [menu.social.params]
+      icon = "link"
+      newTab = true
+
+[markup]
+  [markup.highlight]
+    style = "github"
+    lineNos = true

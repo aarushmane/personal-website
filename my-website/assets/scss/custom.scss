@@ -1,0 +1,392 @@
+.profile-home {
+    max-width: 900px;
+    color: var(--body-text-color);
+}
+
+.profile-home h1,
+.profile-home h2,
+.profile-home h3,
+.profile-home strong {
+    color: var(--card-text-color-main);
+}
+
+.profile-hero {
+    padding: clamp(2rem, 7vw, 6rem) 0 clamp(4rem, 10vw, 8rem);
+}
+
+.profile-kicker,
+.project-card-meta {
+    color: var(--body-text-color-secondary);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin: 0 0 1rem;
+    text-transform: uppercase;
+}
+
+.profile-hero h1,
+.profile-section h2 {
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+    margin: 0;
+}
+
+.profile-hero h1 {
+    font-size: clamp(3.5rem, 9vw, 7rem);
+    max-width: 760px;
+}
+
+.profile-lede {
+    color: var(--body-text-color-secondary);
+    font-size: clamp(1.2rem, 2.3vw, 1.7rem);
+    line-height: 1.45;
+    margin: 2rem 0 0;
+    max-width: 650px;
+}
+
+.profile-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 2rem;
+}
+
+.category-actions {
+    gap: 0.7rem;
+}
+
+.profile-button {
+    border: 1px solid var(--body-text-color-secondary);
+    border-radius: 999px;
+    color: var(--body-text-color);
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.75rem 1.2rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.profile-button:hover,
+.profile-button-primary {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--accent-color-text);
+}
+
+.profile-section {
+    border-top: 1px solid var(--card-separator-color);
+    padding: clamp(3.5rem, 8vw, 7rem) 0;
+    scroll-margin-top: 2rem;
+}
+
+.profile-section h2 {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    max-width: 700px;
+}
+
+.profile-copy {
+    color: var(--body-text-color-secondary);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+    max-width: 700px;
+}
+
+.profile-copy p {
+    margin: 0 0 1rem;
+}
+
+.profile-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 2rem;
+}
+
+.profile-facts span {
+    background: var(--card-background);
+    border: 1px solid var(--card-separator-color);
+    border-radius: 999px;
+    color: var(--body-text-color-secondary);
+    font-size: 0.82rem;
+    padding: 0.55rem 0.8rem;
+}
+
+.profile-section-heading {
+    align-items: end;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.research-feature,
+.research-secondary {
+    border-top: 1px solid var(--card-separator-color);
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+}
+
+.research-feature h3,
+.research-secondary h3 {
+    font-size: 1.45rem;
+    margin: 0;
+}
+
+.research-feature > p:not(.project-card-meta),
+.research-secondary > p:not(.project-card-meta) {
+    color: var(--body-text-color-secondary);
+    line-height: 1.7;
+    margin: 1rem 0 0;
+    max-width: 760px;
+}
+
+.research-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+}
+
+.research-links .profile-button,
+.research-links .profile-button-primary {
+    background: transparent;
+    border-color: var(--accent-color);
+    color: var(--body-text-color);
+}
+
+.research-links .profile-button:hover,
+.research-links .profile-button-primary:hover {
+    background: var(--accent-color);
+    color: var(--accent-color-text);
+}
+
+.education-list,
+.volunteer-list {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 2rem;
+}
+
+.education-list {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.education-item,
+.volunteer-item {
+    background: var(--card-background);
+    border: 1px solid var(--card-separator-color);
+    border-radius: var(--card-border-radius);
+    display: block;
+    padding: 1.25rem;
+}
+
+.education-item {
+    background: var(--card-background);
+    border: 1px solid var(--card-separator-color);
+    border-radius: var(--card-border-radius);
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+}
+
+.education-item h3,
+.volunteer-item h3 {
+    font-size: 1.35rem;
+    margin: 0;
+}
+
+.education-item p:not(.project-card-meta),
+.volunteer-item p:not(.project-card-meta) {
+    color: var(--body-text-color-secondary);
+    line-height: 1.6;
+    margin: 0.45rem 0 0;
+}
+
+.education-item > p {
+    margin-top: 0;
+}
+
+.volunteer-item ul {
+    color: var(--body-text-color-secondary);
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.volunteer-item li + li {
+    margin-top: 0.5rem;
+}
+
+.experience-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 2rem;
+}
+
+.awards-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 2rem;
+}
+
+.award-card {
+    border-top: 3px solid var(--accent-color);
+    padding: 1rem 0 0;
+}
+
+.award-card h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.award-card p:not(.project-card-meta) {
+    color: var(--body-text-color-secondary);
+    line-height: 1.6;
+    margin: 0.7rem 0 0;
+}
+
+.experience-card {
+    background: var(--card-background);
+    border: 1px solid var(--card-separator-color);
+    border-radius: var(--card-border-radius);
+    padding: 1.25rem;
+}
+
+.experience-card h3 {
+    font-size: 1.35rem;
+    margin: 0;
+}
+
+.experience-card > p:not(.project-card-meta) {
+    color: var(--body-text-color-secondary);
+    line-height: 1.6;
+    margin: 0.8rem 0 1rem;
+}
+
+.experience-card ul {
+    color: var(--body-text-color-secondary);
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.experience-card li + li {
+    margin-top: 0.55rem;
+}
+
+.project-group + .project-group {
+    margin-top: 3.5rem;
+}
+
+.project-group-label {
+    color: var(--body-text-color-secondary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin: 0 0 1rem;
+    text-transform: uppercase;
+}
+
+.profile-text-link {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.project-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-card {
+    background: var(--card-background);
+    border: 1px solid var(--card-separator-color);
+    border-radius: var(--card-border-radius);
+    color: var(--body-text-color);
+    overflow: hidden;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.project-card-media {
+    align-items: center;
+    background: linear-gradient(135deg, var(--accent-color), var(--body-background));
+    color: var(--accent-color-text);
+    display: flex;
+    font-size: 0.75rem;
+    font-weight: 700;
+    height: 150px;
+    justify-content: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.project-card-body {
+    padding: 1.25rem;
+}
+
+.project-card-meta {
+    margin-bottom: 0.6rem;
+}
+
+.project-card h3 {
+    font-size: 1.35rem;
+    margin: 0;
+}
+
+.project-card p:not(.project-card-meta) {
+    color: var(--body-text-color-secondary);
+    line-height: 1.6;
+    margin: 0.7rem 0 1rem;
+}
+
+.profile-contact > p:not(.profile-kicker) {
+    color: var(--body-text-color-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1.5rem 0 2rem;
+    max-width: 580px;
+}
+
+@media (max-width: 700px) {
+    .experience-grid,
+    .awards-grid,
+    .volunteer-list {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-section-heading {
+        align-items: start;
+        display: block;
+    }
+
+    .education-item {
+        display: block;
+    }
+
+    .education-item > p {
+        margin-top: 1rem;
+    }
+
+    .profile-section-heading .profile-text-link {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
