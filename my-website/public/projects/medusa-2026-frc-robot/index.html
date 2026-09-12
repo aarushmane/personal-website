@@ -6,7 +6,7 @@
     <meta name="description" content="Aarush Mane&#39;s portfolio of robotics software, research, and civic work.">
     <title>Medusa | 2026 FRC Robot | Aarush Mane</title>
     
-    <link rel="stylesheet" href="/css/main.min.e47f818c66b4e5814c01b1f1dfbe47ab7fcb437e22970d3636000b60f914b0f6.css">
+    <link rel="stylesheet" href="/css/main.min.a7e0ad36b37acf9c009d2ff7d93dc255c34579a777b3b00276dcf078f18bf0eb.css">
 </head>
 <body>
     <header class="site-nav">
@@ -38,7 +38,7 @@
         <a class="back-link" href="/#projects">← Back to projects</a>
         <p class="eyebrow">FIRST Robotics Competition | Medusa</p>
         <h1>Medusa | 2026 FRC Robot</h1>
-        <p class="case-study-summary">Oculus Quest localization, AprilTag pose estimation, autonomous scheduling, and analytics for Team 2590&rsquo;s Medusa robot, which earned the <strong>2026 Innovation in Control Award</strong>.</p>
+        <p class="case-study-summary">Oculus Quest coprocessor localization, 3D pose tracking, autonomous scheduling, and analytics for Team 2590&rsquo;s Medusa robot, which earned the <strong>2026 Innovation in Control Award</strong>.</p>
         <div class="case-study-actions">
             
             <a class="button button-quiet" href="mailto:am6927@princeton.edu">Discuss this project</a>
@@ -56,7 +56,7 @@
 <h2 id="technical-implementation">Technical implementation</h2>
 <ul>
 <li><strong>3D localization:</strong> Architected an Oculus Quest coprocessor pipeline for real-time robot pose tracking. Designed the interface that brought external 3D estimates into the navigation state.</li>
-<li><strong>AprilTag pose estimation:</strong> Implemented AprilTag PnP processing with OpenCV to estimate camera-to-tag geometry and field position and heading.</li>
+<li><strong>Computer vision &amp; pose tracking:</strong> Implemented 3D pose tracking algorithms in Java and OpenCV to estimate robot geometry, field position, and heading.</li>
 <li><strong>Autonomous execution:</strong> Built Java trajectory wrappers that parsed JSON motion profiles and translated them into command-based actions. Synchronized subsystem scheduling to prevent lag during high-speed movement.</li>
 <li><strong>Control integration:</strong> Connected localization estimates, trajectory execution, drivetrain behavior, and subsystem commands with explicit timing and state transitions.</li>
 <li><strong>Scouting intelligence:</strong> Developed Argus with Python API scrapers, MiniMax LLM tooling, Nanobot, and GitHub workflows. Argus sent scouting data, match logs, and graphics to analytical sheets.</li>
