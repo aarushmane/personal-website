@@ -1,27 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>FIRST Robotics Competition (FRC) Robots on Aarush Mane</title>
-        <link>http://localhost:1313/projects/frc/</link>
-        <description>Recent content in FIRST Robotics Competition (FRC) Robots on Aarush Mane</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/projects/frc/index.xml" rel="self" type="application/rss+xml" /><item>
-            <title>Medusa | 2026 FRC Robot</title>
-            <link>http://localhost:1313/projects/medusa-2026-frc-robot/</link>
-            <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1313/projects/medusa-2026-frc-robot/</guid>
-            <description>&lt;p&gt;Medusa was Team 2590&amp;rsquo;s 2026 REBUILT robot. I led software development and strategy. The team won the Innovation in Control Award sponsored by nVent at the 2026 FMA Robbinsville District Event. The competition code is not public under FIRST guidelines, so this page describes my documented work rather than a public code walkthrough.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technical-implementation&#34;&gt;&lt;a href=&#34;#technical-implementation&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;Technical implementation&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;3D localization:&lt;/strong&gt; Architected an Oculus Quest coprocessor pipeline for real-time robot pose tracking. Designed the interface that brought external 3D estimates into the navigation state.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;AprilTag pose estimation:&lt;/strong&gt; Implemented AprilTag PnP processing with OpenCV to estimate camera-to-tag geometry and field position and heading.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Autonomous execution:&lt;/strong&gt; Built Java trajectory wrappers that parsed JSON motion profiles and translated them into command-based actions. Synchronized subsystem scheduling to prevent lag during high-speed movement.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Control integration:&lt;/strong&gt; Connected localization estimates, trajectory execution, drivetrain behavior, and subsystem commands with explicit timing and state transitions.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Scouting intelligence:&lt;/strong&gt; Developed Argus with Python API scrapers, MiniMax LLM tooling, Nanobot, and GitHub workflows. Argus sent scouting data, match logs, and graphics to analytical sheets.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Engineering leadership:&lt;/strong&gt; Led technical strategy across 65 members, reviewed architecture and pull requests, mentored 10+ developers, and connected telemetry to match decisions.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Publication status:&lt;/strong&gt; The 2026 competition code is not public under FIRST guidelines. This page describes my documented work and its architecture.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;awards&#34;&gt;&lt;a href=&#34;#awards&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;Awards&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Innovation in Control Award (2026 FMA Robbinsville District Event):&lt;/strong&gt; Team 2590 was recognized for the integrated Oculus Quest navigation system, cloud debugging chatbot, and scouting analytics that improved autonomous performance and strategic decision-making.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;</description>
-        </item><item>
-            <title>Leonidas | 2025 FRC Robot</title>
-            <link>http://localhost:1313/projects/leonidas-2025-frc-robot/</link>
-            <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1313/projects/leonidas-2025-frc-robot/</guid>
-            <description>&lt;p&gt;Leonidas was Team 2590&amp;rsquo;s 2025 Reefscape robot. The public base project uses Java and AdvantageKit with drive modules, real and simulated hardware IO, PhotonVision, pose estimation, PathPlanner trajectories, and AdvantageScope debugging. Team 2590 won robot performance at the 2025 FMA Robbinsville District Event.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technical-implementation&#34;&gt;&lt;a href=&#34;#technical-implementation&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;Technical implementation&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Swerve and hardware abstraction:&lt;/strong&gt; Worked with Java drive modules and separate real-hardware and simulation IO layers. The same subsystem logic could run against hardware adapters or simulated devices.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Odometry and localization:&lt;/strong&gt; Used gyro and module measurements, odometry threads, pose estimation, and PhotonVision to maintain a field-relative robot state.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Autonomous motion:&lt;/strong&gt; Built and debugged PathPlanner trajectories for multi-step Reefscape scoring and pickup routines.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Instrumentation:&lt;/strong&gt; Used AdvantageKit logs, AdvantageScope layouts, calibration data, tunable numbers, and simulation to diagnose trajectory error and mechanism timing.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Vision pipeline:&lt;/strong&gt; Integrated camera observations into robot-state estimation and separated vision processing from drivetrain control.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Technical communication:&lt;/strong&gt; Presented architecture, debugging evidence, and design decisions to judges and partners.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;awards&#34;&gt;&lt;a href=&#34;#awards&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;Awards&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Robot Performance Winner (2025 FMA Robbinsville District Event):&lt;/strong&gt; Leonidas earned the event&amp;rsquo;s robot-performance recognition through consistent autonomous and teleoperated execution.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;</description>
-        </item><item>
-            <title>Kronos | 2024 FRC Robot</title>
-            <link>http://localhost:1313/projects/kronos-2024-frc-robot/</link>
-            <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1313/projects/kronos-2024-frc-robot/</guid>
-            <description>&lt;p&gt;Kronos was Team 2590&amp;rsquo;s 2024 Crescendo robot. I worked on the Java/WPILib command-based architecture. It separated mechanisms into reusable subsystems and composed match behavior through command factories and autonomous builders. Team 2590 won its division at the 2024 FIRST World Championship.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technical-implementation&#34;&gt;&lt;a href=&#34;#technical-implementation&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;Technical implementation&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Command-based coordination:&lt;/strong&gt; Built and tested Java autonomous routines from PathPlanner paths and reusable command sequences. Used factories to coordinate drive, shooter, conveyor, elevator-arm, intake, and climb actions.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Subsystem architecture:&lt;/strong&gt; Worked across mechanism subsystems and shared constants. This let driver control, autonomous routines, and mechanism sequencing evolve independently.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Vision and field awareness:&lt;/strong&gt; Used PhotonVision and pose-estimation utilities to connect camera measurements to field-aware behavior.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Autonomous iteration:&lt;/strong&gt; Used path files, tunable parameters, characterization commands, simulation, and data logs to refine control values between matches.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Competition workflow:&lt;/strong&gt; Tested full match routines and coordinated software integration with electrical and mechanical work.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;awards&#34;&gt;&lt;a href=&#34;#awards&#34; class=&#34;header-anchor&#34;&gt;&lt;/a&gt;Awards&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;FIRST World Championship Division Winner (2024):&lt;/strong&gt; Team 2590 won its division at the 2024 FIRST World Championship with Kronos.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;</description>
-        </item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>FIRST Robotics Competition (FRC) Robots on Aarush Mane</title>
+		<link>https://example.org/projects/frc/</link>
+		<description>Recent content in FIRST Robotics Competition (FRC) Robots on Aarush Mane</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://example.org/projects/frc/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Medusa | 2026 FRC Robot</title>
+				<link>https://example.org/projects/medusa-2026-frc-robot/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.org/projects/medusa-2026-frc-robot/</guid>
+				<description>Oculus Quest localization, AprilTag pose estimation, autonomous scheduling, and analytics for Team 2590&amp;rsquo;s Medusa robot, which earned the &lt;strong&gt;2026 Innovation in Control Award&lt;/strong&gt;.</description>
+			</item>
+			<item>
+				<title>Leonidas | 2025 FRC Robot</title>
+				<link>https://example.org/projects/leonidas-2025-frc-robot/</link>
+				<pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+				<guid>https://example.org/projects/leonidas-2025-frc-robot/</guid>
+				<description>Vision, swerve autonomy, trajectory following, and simulation work for Team 2590&amp;rsquo;s Leonidas robot, which won &lt;strong&gt;2025 FMA Robbinsville robot performance&lt;/strong&gt;.</description>
+			</item>
+			<item>
+				<title>Kronos | 2024 FRC Robot</title>
+				<link>https://example.org/projects/kronos-2024-frc-robot/</link>
+				<pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>https://example.org/projects/kronos-2024-frc-robot/</guid>
+				<description>Java command-based software, PathPlanner routines, and vision tools for Team 2590&amp;rsquo;s Kronos robot, which won its &lt;strong&gt;Championship Division&lt;/strong&gt; at Worlds.</description>
+			</item>
+	</channel>
 </rss>

@@ -1,3 +1,6 @@
 [submodule "my-website/themes/hugo-theme-stack"]
 	path = my-website/themes/hugo-theme-stack
 	url = https://github.com/CaiJimmy/hugo-theme-stack.git
+[submodule "my-website/themes/careercanvas"]
+	path = my-website/themes/careercanvas
+	url = https://github.com/felipecordero/careercanvas.git

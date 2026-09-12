@@ -3,7 +3,7 @@ title: "AI Assistive Camera with Email Sender"
 category: "Python | Computer Vision | Streamlit"
 group: "project"
 period: "Robbinsville High School CS Fair | 2024"
-summary: "A Python and Streamlit assistive-camera workflow used successfully by 200+ users at the 2024 event."
+summary: "A Python and Streamlit assistive-camera workflow used successfully by **200+ users** at the 2024 event."
 date: 2024-05-01
 external: "https://github.com/aarushmane/AI-Assistive-Camera-with-Email-Sender"
 ---

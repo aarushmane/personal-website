@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="case-study-shell research-case-study">
+    <header class="case-study-hero">
+        <a class="back-link" href="{{ "#research" | relURL }}">← Back to research</a>
+        <p class="eyebrow">{{ .Params.period }}</p>
+        <h1>{{ .Title }}</h1>
+        <p class="case-study-summary">{{ .Params.summary | markdownify }}</p>
+        <div class="case-study-actions">
+            <a class="button button-small" href="{{ .Params.paper_url }}" target="_blank" rel="noopener noreferrer">IEEE paper ↗</a>
+            <a class="button button-small" href="{{ .Params.extended_url }}" target="_blank" rel="noopener noreferrer">Extended Paper PDF ↗</a>
+            <a class="button button-small" href="{{ .Params.video_url }}" target="_blank" rel="noopener noreferrer">Symposium video ↗</a>
+        </div>
+    </header>
+
+    <div class="case-study-meta">
+        <div><span>Venue</span><strong>IEEE MIT URTC</strong></div>
+        <div><span>Methods</span><strong>PID · ROS · Vicon · LiDAR</strong></div>
+        <div><span>Format</span><strong>Research case study</strong></div>
+    </div>
+
+    <article class="case-study-content">
+        <div class="case-study-prose">{{ .Content }}</div>
+        <aside class="case-study-aside">
+            <div class="aside-card"><p class="eyebrow">Research note</p><p>This case study presents the problem, method, validation, and supporting materials behind the publication.</p></div>
+        </aside>
+    </article>
+</div>
+{{ end }}

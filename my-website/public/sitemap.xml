@@ -2,71 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/</loc>
     <lastmod>2026-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/argus-panoptes-chatbot/</loc>
+    <loc>https://example.org/projects/argus-panoptes-chatbot/</loc>
     <lastmod>2026-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/frc/</loc>
+    <loc>https://example.org/projects/frc/</loc>
     <lastmod>2026-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/medusa-2026-frc-robot/</loc>
+    <loc>https://example.org/projects/medusa-2026-frc-robot/</loc>
     <lastmod>2026-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/istart-valley-biopack-startup-pitch/</loc>
+    <loc>https://example.org/projects/istart-valley-biopack-startup-pitch/</loc>
     <lastmod>2025-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/leonidas-2025-frc-robot/</loc>
+    <loc>https://example.org/projects/leonidas-2025-frc-robot/</loc>
     <lastmod>2025-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/kronos-2024-frc-robot/</loc>
+    <loc>https://example.org/projects/kronos-2024-frc-robot/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/ai-assistive-camera-with-email-sender/</loc>
+    <loc>https://example.org/projects/ai-assistive-camera-with-email-sender/</loc>
     <lastmod>2024-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/awards/aime-qualifier/</loc>
+    <loc>https://example.org/awards/aime-qualifier/</loc>
   </url><url>
-    <loc>http://localhost:1313/awards/</loc>
+    <loc>https://example.org/awards/</loc>
   </url><url>
-    <loc>http://localhost:1313/education/princeton/</loc>
+    <loc>https://example.org/education/princeton/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://example.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/volunteering/march-of-dimes/</loc>
+    <loc>https://example.org/volunteering/march-of-dimes/</loc>
   </url><url>
-    <loc>http://localhost:1313/education/</loc>
+    <loc>https://example.org/education/</loc>
   </url><url>
-    <loc>http://localhost:1313/experience/</loc>
+    <loc>https://example.org/experience/</loc>
   </url><url>
-    <loc>http://localhost:1313/experience/ftc/</loc>
+    <loc>https://example.org/experience/ftc/</loc>
   </url><url>
-    <loc>http://localhost:1313/awards/championship-division/</loc>
+    <loc>https://example.org/awards/championship-division/</loc>
   </url><url>
-    <loc>http://localhost:1313/experience/frc/</loc>
+    <loc>https://example.org/experience/frc/</loc>
   </url><url>
-    <loc>http://localhost:1313/experience/gset/</loc>
+    <loc>https://example.org/experience/gset/</loc>
   </url><url>
-    <loc>http://localhost:1313/education/robbinsville/</loc>
+    <loc>https://example.org/education/robbinsville/</loc>
   </url><url>
-    <loc>http://localhost:1313/awards/innovation-control/</loc>
+    <loc>https://example.org/awards/innovation-control/</loc>
   </url><url>
-    <loc>http://localhost:1313/awards/national-merit/</loc>
+    <loc>https://example.org/awards/national-merit/</loc>
   </url><url>
-    <loc>http://localhost:1313/research/ieee-pid-control/</loc>
+    <loc>https://example.org/research/ieee-pid-control/</loc>
   </url><url>
-    <loc>http://localhost:1313/awards/purple-comet/</loc>
+    <loc>https://example.org/awards/purple-comet/</loc>
   </url><url>
-    <loc>http://localhost:1313/research/</loc>
+    <loc>https://example.org/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/awards/robot-performance/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/volunteering/</loc>
+    <loc>https://example.org/volunteering/</loc>
   </url>
 </urlset>

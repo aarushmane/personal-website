@@ -1,6 +1,6 @@
 baseURL = "https://example.org/"
 title = "Aarush Mane"
-theme = "hugo-theme-stack"
+theme = "careercanvas"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 enableEmoji = true
@@ -12,37 +12,28 @@ enableEmoji = true
   projects = "/projects/:slug/"
 
 [params]
+  name = "Aarush Mane"
   author = "Aarush Mane"
-  description = "Aarush Mane's personal portfolio, robotics work, research, and writing."
+  email = "am6927@princeton.edu"
+  description = "Aarush Mane's portfolio of robotics software, research, and civic work."
   keywords = "Aarush Mane, computer science, robotics, software, research"
-  mainSections = ["projects"]
-  rssFullContent = true
+  tagline = "I build systems that sense, reason, and move."
+  hero_description = "Computer science student building robotics software, research tools, and useful systems for real teams."
+  hero_location = "Robbinsville, New Jersey"
+  github_url = "https://github.com/aarushmane"
+  github_text = "github.com/aarushmane"
+  linkedin_url = "https://www.linkedin.com/in/aarush-mane/"
+  ieee_url = "https://ieeexplore.ieee.org/author/120619555333829"
+  resume_url_en = "/resume.pdf"
+  resume_label = "Download resume"
+  copyright = "2026 | Aarush Mane"
 
-  [params.sidebar]
-    subtitle = "Computer science student, robotics builder, and researcher."
-    emoji = "*"
-    compact = false
-
-  [params.colorScheme]
-    toggle = true
-    default = "auto"
-
-  [params.article]
-    headingAnchor = true
-    math = false
-    toc = false
-    readingTime = false
-
-  [params.footer]
-    since = 2026
-    customText = "Built with Hugo and Theme Stack."
-
-  [params.widgets]
-    homepage = []
-    page = []
-
-  [params.comments]
-    enabled = false
+  [params.color_palettes]
+    [[params.color_palettes.palette]]
+      name = "nerdy-night"
+      main_color = "#07111f"
+      second_color = "#22d3ee"
+      third_color = "#34d399"
 
 [taxonomies]
   category = "categories"

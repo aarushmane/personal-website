@@ -16,11 +16,11 @@ During my iStart Valley internship, I worked with a team to analyze and pitch Bi
 - **Generative AI:** Evaluated GenAI and other emerging technologies. Advocated for useful, high-impact applications as a Tech Evangelist.
 - **Design thinking:** Completed Stanford University's d.school Design Thinking crash course. Applied user-centered problem framing, ideation, prototyping, and iteration to complex challenges.
 - **Product-market fit:** Analyzed customer needs, market size, competition, and opportunity. Defined the Target Addressable Market with the team.
-- **Financial modeling:** Built projections, unit economics, market sizing, and TAM/SAM/SOM analyses around BioPack's modeled $500,000 valuation.
+- **Financial modeling:** Built projections, unit economics, market sizing, and TAM/SAM/SOM analyses around BioPack's modeled **$500,000 valuation**.
 - **Lean Startup:** Used the Lean Business Model Canvas to turn an early concept into a testable business model.
-- **Team leadership:** Led 4-5 interns through weekly progress reviews. Set priorities, reviewed deliverables, and supported team growth.
+- **Team leadership:** Led **4-5 interns** through weekly progress reviews. Set priorities, reviewed deliverables, and supported team growth.
 - **Executive storytelling:** Built and presented business plans to EIRs and the ELT. Connected market evidence to a clear venture plan.
-- **Service and communication:** Completed 265+ hours of technical writing, stakeholder management, and community outreach.
+- **Service and communication:** Completed **265+ hours** of technical writing, stakeholder management, and community outreach.
 
 ## Outcome
 
