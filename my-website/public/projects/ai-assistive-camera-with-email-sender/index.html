@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Weighted GPA 4.682/5.0 | Unweighted GPA 3.977/4.0 | SAT 1530 | Won $2,500 National Merit Scholarship (&lt;1% acceptance rate) | AP Scholar with Distinction | NJ State Seal of Biliteracy, Spanish.">
-<title>High School Diploma</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="A Python and Streamlit assistive-camera workflow used successfully by 200+ users at the 2024 event.">
+<title>AI Assistive Camera with Email Sender</title>
 
 
-<link rel="canonical" href="http://localhost:1313/education/robbinsville/">
+<link rel="canonical" href="http://localhost:1313/projects/ai-assistive-camera-with-email-sender/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
 
 
-<link rel="stylesheet" href="/scss/style.min.a3f7cb38157818c16dd5b8e69f080183d75864425cb1f47851094780d0826871.css"><meta property='og:title' content="High School Diploma">
-<meta property='og:description' content="Weighted GPA 4.682/5.0 | Unweighted GPA 3.977/4.0 | SAT 1530 | Won $2,500 National Merit Scholarship (&lt;1% acceptance rate) | AP Scholar with Distinction | NJ State Seal of Biliteracy, Spanish.">
-<meta property='og:url' content='http://localhost:1313/education/robbinsville/'>
+<link rel="stylesheet" href="/scss/style.min.a3f7cb38157818c16dd5b8e69f080183d75864425cb1f47851094780d0826871.css"><meta property='og:title' content="AI Assistive Camera with Email Sender">
+<meta property='og:description' content="A Python and Streamlit assistive-camera workflow used successfully by 200+ users at the 2024 event.">
+<meta property='og:url' content='http://localhost:1313/projects/ai-assistive-camera-with-email-sender/'>
 <meta property='og:site_name' content='Aarush Mane'>
-<meta property='og:type' content='article'><meta property='article:section' content='Education' />
-<meta name="twitter:title" content="High School Diploma">
-<meta name="twitter:description" content="Weighted GPA 4.682/5.0 | Unweighted GPA 3.977/4.0 | SAT 1530 | Won $2,500 National Merit Scholarship (&lt;1% acceptance rate) | AP Scholar with Distinction | NJ State Seal of Biliteracy, Spanish.">
+<meta property='og:type' content='article'><meta property='article:section' content='Projects' /><meta property='article:published_time' content='2024-05-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-05-01T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="AI Assistive Camera with Email Sender">
+<meta name="twitter:description" content="A Python and Streamlit assistive-camera workflow used successfully by 200+ users at the 2024 event.">
     </head>
     <body class="
     article-page
@@ -200,7 +200,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/education/robbinsville/">High School Diploma</a>
+            <a href="/projects/ai-assistive-camera-with-email-sender/">AI Assistive Camera with Email Sender</a>
         </h2>
     
         
@@ -213,6 +213,31 @@
     
     
     
+    <footer class="article-meta">
+        
+            <div class="inline-meta">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                    <time class="article-time--published" datetime='2024-05-01T00:00:00Z'>Wednesday, May 1, 2024</time>
+                
+
+                
+            </div>
+        
+
+        
+
+        
+    </footer>
+    
 </div>
 
 </header>
@@ -222,7 +247,42 @@
     <section class="article-content">
     
     
-    
+    <p><img alt="AI Assistive Camera project placeholder" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/images/project-placeholder.svg"></p>
+<p>This 2024 Robbinsville High School CS Fair project combines a live webcam interface, computer vision, and email automation. The application waits for a face and eyes before it allows a picture to be captured. It then emails the image to a configured recipient.</p>
+<h2 id="technical-implementation"><a href="#technical-implementation" class="header-anchor"></a>Technical implementation
+</h2><ul>
+<li><strong>Interactive application:</strong> Built a Streamlit interface with live camera output, a capture button, sidebar controls, status text, and email fields.</li>
+<li><strong>Video capture:</strong> Used OpenCV to read webcam frames and display the processed result in the browser interface.</li>
+<li><strong>Image preprocessing:</strong> Converted frames from BGR to grayscale and applied a bilateral filter to reduce noise while preserving edges.</li>
+<li><strong>Hierarchical detection:</strong> Used a frontal-face Haar cascade to find face regions, then passed each face ROI to a separate eye cascade.</li>
+<li><strong>Capture gating:</strong> Required at least two detected eyes before marking the camera ready. This reduced premature captures.</li>
+<li><strong>Visual feedback:</strong> Drew face boxes and displayed “Eye detected,” “No eyes detected,” and “No face detected” during the live loop.</li>
+<li><strong>Image controls:</strong> Added contrast and brightness sliders with <code>cv2.addWeighted</code>, plus an optional grayscale display mode.</li>
+<li><strong>Snapshot pipeline:</strong> Captured the selected frame, applied the image settings, wrote <code>savedImg.jpg</code>, and read it as binary data.</li>
+<li><strong>Email delivery:</strong> Built a Python <code>EmailMessage</code>, attached the image with its MIME subtype, and sent it through Gmail SMTP over SSL with <code>smtplib</code>.</li>
+<li><strong>Dependencies:</strong> Used Python, Streamlit, OpenCV, Pillow, NumPy, <code>email</code>, <code>ssl</code>, <code>smtplib</code>, and Haar cascade XML classifiers.</li>
+</ul>
+<h2 id="user-workflow"><a href="#user-workflow" class="header-anchor"></a>User workflow
+</h2><ol>
+<li>Open the Streamlit camera interface and set brightness, contrast, and grayscale preferences.</li>
+<li>Enter the sender, app-password credential, recipient, subject, and message body.</li>
+<li>Wait for the detection loop to confirm a face and at least two eyes.</li>
+<li>Select the capture action after the interface reports that eyes are detected.</li>
+<li>Send the adjusted image as an email attachment through the configured Gmail account.</li>
+</ol>
+<h2 id="engineering-focus"><a href="#engineering-focus" class="header-anchor"></a>Engineering focus
+</h2><p>The project connected real-time sensing, image preprocessing, hierarchical detection, user confirmation, file handling, and secure network delivery in one application. It also showed the detection state, so users knew why the camera was or was not ready.</p>
+<h2 id="project-outcome"><a href="#project-outcome" class="header-anchor"></a>Project outcome
+</h2><p>The project was developed for the 2024 Robbinsville High School CS Fair and was used successfully by 200+ people at the event. This deployment gave me hands-on experience integrating OpenCV detection, a browser-based Python application, image controls, and SMTP email automation.</p>
+<h2 id="event-outcome"><a href="#event-outcome" class="header-anchor"></a>Event outcome
+</h2><ul>
+<li><strong>200+ users served:</strong> More than 200 participants used the camera workflow during the event.</li>
+<li><strong>End-to-end validation:</strong> Users completed the detection flow, captured images, and triggered email delivery.</li>
+<li><strong>Practical usability:</strong> Repeated live use showed the value of clear status feedback and simple controls.</li>
+</ul>
+<p><a class="link" href="https://github.com/aarushmane/AI-Assistive-Camera-with-Email-Sender"  target="_blank" rel="noopener"
+    >View the project on GitHub</a></p>
+
 </section>
 
 
