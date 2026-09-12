@@ -11,4 +11,9 @@ highlights:
   - "Taught Java autonomous routines, TensorFlow vision, and real-time AppSheet data workflows."
   - "Supported drive team decisions with scouting and tactical analysis while mentoring students through competition software development."
   - "Secured **$16,000+** in sponsorships and increased regional STEM participation by **30%** through community and school-district outreach."
+media:
+  - src: "/media/FTC1.JPG"
+    alt: "FIRST Tech Challenge Team 22348 REAPR with its robot"
+  - src: "/media/FTC2.JPG"
+    alt: "FIRST Tech Challenge Team 22348 REAPR competing with its robot"
 ---

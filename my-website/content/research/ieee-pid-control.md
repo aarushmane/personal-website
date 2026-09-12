@@ -6,6 +6,16 @@ summary: "Co-authored research on non-linear PID control, path planning, ROS Gaz
 paper_url: "https://ieeexplore.ieee.org/document/11533106"
 extended_url: "https://drive.google.com/file/d/18ED5a_aI4rQM_JSxM_MhHVoMt1Xh2ltn/view"
 video_url: "https://youtu.be/6KWDjNa425o"
+media:
+  - src: "/media/PIDPaper1.JPG"
+    alt: "Differential-drive robot path-tracking research presentation"
+    caption: "Research presentation on adaptive PID control and autonomous path tracking."
+  - src: "/media/PIDPaper2.JPG"
+    alt: "TurtleBot used for PID control experiments"
+    caption: "Physical validation paired ROS simulation with Vicon motion capture."
+  - src: "/media/PIDPaper3.JPG"
+    alt: "PID control research team and presentation"
+    caption: "The work was presented at the IEEE MIT Undergraduate Research Technology Conference."
 ---
 
 ## Problem

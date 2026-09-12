@@ -5,6 +5,9 @@ group: "project"
 period: "iStart Valley | Jan 2025 - Jun 2025"
 summary: "A BioPack concept, market analysis, and venture pitch that earned Global Semifinalist placement. It was a proposal, not a launched company."
 date: 2025-06-01
+document:
+  src: "/media/BioPackPitch.pdf"
+  label: "BioPack pitch deck"
 ---
 
 During my iStart Valley internship, I worked with a team to analyze and pitch BioPack, an early-stage concept modeled around a $500,000 valuation. I built the business case, market strategy, and pitch materials for iStart Valley Entrepreneurs in Residence (EIRs), the Executive Leadership Team (ELT), entrepreneurs, investors, and industry judges. BioPack was a pitch and analysis, not a company we founded or operated.

@@ -6,9 +6,14 @@ period: "Robbinsville High School CS Fair | 2024"
 summary: "A Python and Streamlit assistive-camera workflow used successfully by **200+ users** at the 2024 event."
 date: 2024-05-01
 external: "https://github.com/aarushmane/AI-Assistive-Camera-with-Email-Sender"
+media:
+  - src: "/media/AICam1.JPG"
+    alt: "AI Assistive Camera project display"
+    caption: "A live demonstration of the assistive-camera workflow at the 2024 CS Fair."
+  - src: "/media/AICam2.jpg"
+    alt: "Students using the AI Assistive Camera at the CS Fair"
+    caption: "The project in use during the event, where it served more than 200 participants."
 ---
-
-![AI Assistive Camera project placeholder](/images/project-placeholder.svg)
 
 This 2024 Robbinsville High School CS Fair project combines a live webcam interface, computer vision, and email automation. The application waits for a face and eyes before it allows a picture to be captured. It then emails the image to a configured recipient.
 

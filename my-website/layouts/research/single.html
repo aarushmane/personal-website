@@ -22,6 +22,13 @@
         <div class="case-study-prose">{{ .Content }}</div>
         <aside class="case-study-aside">
             <div class="aside-card"><p class="eyebrow">Research note</p><p>This case study presents the problem, method, validation, and supporting materials behind the publication.</p></div>
+            {{ with .Params.media }}
+            <section class="case-study-gallery" aria-label="Research media"><p class="aside-gallery-label">Research media</p>
+                {{ range . }}
+                <figure class="case-study-media"><a href="{{ .src | relURL }}" target="_blank" rel="noopener noreferrer"><img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy"></a>{{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}</figure>
+                {{ end }}
+            </section>
+            {{ end }}
         </aside>
     </article>
 </div>
