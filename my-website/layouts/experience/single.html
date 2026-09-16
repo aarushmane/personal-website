@@ -1,0 +1,89 @@
+{{ define "main" }}
+<div class="case-study-shell research-case-study">
+    <header class="case-study-hero">
+        <a class="back-link" href="{{ "/#civic-service" | relURL }}">← Back to civic service</a>
+
+        <p class="eyebrow">{{ .Params.eyebrow }}</p>
+
+        <h1>{{ .Title }}</h1>
+
+        <p class="case-study-summary">
+            {{ .Params.summary | markdownify }}
+        </p>
+
+        <div class="case-study-actions">
+            {{ with .Params.first_url }}
+                <a
+                    class="button button-small"
+                    href="{{ . }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    FIRST team page ↗
+                </a>
+            {{ end }}
+        </div>
+    </header>
+
+    <div class="case-study-meta">
+        <div>
+            <span>Organization</span>
+            <strong>{{ .Params.meta_venue }}</strong>
+        </div>
+
+        <div>
+            <span>Methods</span>
+            <strong>{{ .Params.meta_methods }}</strong>
+        </div>
+
+        <div>
+            <span>Format</span>
+            <strong>{{ .Params.meta_format }}</strong>
+        </div>
+    </div>
+
+    <article class="case-study-content">
+        <div class="case-study-prose">
+            {{ .Content }}
+        </div>
+
+        <aside class="case-study-aside">
+            <div class="aside-card">
+                <p class="eyebrow">Community note</p>
+
+                <p>
+                    This case study presents the problem, engineering work,
+                    mentorship, competition experience, and community impact
+                    behind FIRST Tech Challenge Team 22348 REAPR.
+                </p>
+            </div>
+
+            {{ with .Params.media }}
+                <section class="case-study-gallery" aria-label="REAPR media">
+                    <p class="aside-gallery-label">REAPR media</p>
+
+                    {{ range . }}
+                        <figure class="case-study-media">
+                            <a
+                                href="{{ .src | relURL }}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="{{ .src | relURL }}"
+                                    alt="{{ .alt }}"
+                                    loading="lazy"
+                                >
+                            </a>
+
+                            {{ with .caption }}
+                                <figcaption>{{ . }}</figcaption>
+                            {{ end }}
+                        </figure>
+                    {{ end }}
+                </section>
+            {{ end }}
+        </aside>
+    </article>
+</div>
+{{ end }}
