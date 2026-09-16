@@ -23,7 +23,7 @@ media:
     caption: "REAPR combined competitive robotics with a student-led mentorship model."
   - src: "/media/FTC2.JPG"
     alt: "FIRST Tech Challenge Team 22348 REAPR competing with its robot"
-    caption: "Competition was the classroom: students learned software, hardware, strategy, and communication under real constraints."
+    caption: "Beyond mentorship, I was the lead software engineer and drive coach (coordinating all match strategy and alliance seleciton decisions) on the team for two seasons. "
 ---
 
 ## Why I started REAPR
