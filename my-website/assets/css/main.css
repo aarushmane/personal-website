@@ -175,3 +175,173 @@ a { color: inherit; text-decoration: none; }
 .static-pill { background: var(--card); border: 1px solid var(--line); border-radius: 7px; color: var(--text); display: inline-flex; font-size: .82rem; font-weight: 700; padding: .45rem .85rem; user-select: none; cursor: default; }
 
 @media (max-width: 760px) { .hero-portrait { transform: none; }.hero-portrait img { height: 440px; object-position: 46% 20%; }.service-gallery img { height: 135px; } }
+
+/* Featured civic service / FTC case study */
+
+.civic-feature-card {
+  background: linear-gradient(135deg, var(--card), #0b2634);
+  border: 1px solid rgba(52, 211, 153, .3);
+  border-radius: 10px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, .8fr);
+  overflow: hidden;
+  padding: 1.6rem;
+}
+
+.civic-feature-main {
+  min-width: 0;
+}
+
+.civic-feature-heading {
+  align-items: flex-start;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.civic-feature-heading h3 {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  letter-spacing: -.055em;
+  line-height: 1.1;
+  margin: .2rem 0 .45rem;
+}
+
+.civic-role {
+  color: var(--muted);
+  font-family: 'DM Mono', monospace;
+  font-size: .7rem;
+  margin: 0;
+}
+
+.civic-feature-number {
+  color: var(--green);
+  font-family: 'DM Mono', monospace;
+  font-size: 1.4rem;
+}
+
+.civic-summary {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 1.5rem 0 0;
+  max-width: 760px;
+}
+
+.civic-highlights {
+  display: grid;
+  gap: .75rem;
+  margin-top: 1.5rem;
+}
+
+.civic-highlight {
+  align-items: flex-start;
+  background: rgba(255, 255, 255, .025);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  display: flex;
+  gap: .7rem;
+  padding: .8rem .9rem;
+}
+
+.civic-highlight-dot {
+  background: var(--green);
+  border-radius: 50%;
+  flex: 0 0 .45rem;
+  height: .45rem;
+  margin-top: .55rem;
+  width: .45rem;
+}
+
+.civic-highlight span:last-child {
+  color: var(--muted);
+  font-size: .84rem;
+}
+
+.civic-feature-media {
+  min-height: 100%;
+}
+
+.civic-feature-media figure {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.civic-feature-media img {
+  display: block;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.civic-feature-media figcaption {
+  color: var(--muted);
+  font-size: .72rem;
+  padding: .8rem;
+}
+
+.civic-case-link {
+  background: rgba(52, 211, 153, .1);
+  border-color: rgba(52, 211, 153, .4);
+}
+
+/* Civic case-study-specific details */
+
+.civic-case-study .case-study-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+}
+
+.civic-case-study .case-study-meta {
+  border-color: rgba(52, 211, 153, .25);
+}
+
+.civic-stats-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.civic-stat {
+  align-items: baseline;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: .7rem;
+  justify-content: space-between;
+  padding-bottom: .8rem;
+}
+
+.civic-stat:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.civic-stat strong {
+  color: var(--green);
+  font-family: 'DM Mono', monospace;
+  font-size: 1.2rem;
+}
+
+.civic-stat span {
+  color: var(--muted);
+  font-size: .72rem;
+  text-align: right;
+}
+
+@media (max-width: 760px) {
+  .civic-feature-card {
+    grid-template-columns: 1fr;
+  }
+
+  .civic-feature-media img {
+    height: 300px;
+    min-height: 0;
+  }
+
+  .civic-feature-heading {
+    gap: 1rem;
+  }
+}

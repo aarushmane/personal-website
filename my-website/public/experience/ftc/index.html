@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Aarush Mane&#39;s portfolio of robotics software, research, and civic work.">
-    <title>FIRST Tech Challenge | Software, Drive Team &amp; Community Mentor | Aarush Mane</title>
+    <title>FIRST Tech Challenge | REAPR | Aarush Mane</title>
     
-    <link rel="stylesheet" href="/css/main.min.10fbb8cc6376f5077d36c8672d335cb6e7bb69ad1163deeb36a6a65411c6b653.css">
+    <link rel="stylesheet" href="/css/main.min.e78aeba8468cc11a6f23083f25a63f7f4a56ce37999d04c7d9dbf9120f3291c3.css">
 </head>
 <body>
     <header class="site-nav">
@@ -37,14 +37,64 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col lg:flex-row gap-8">
       
-      <div class="w-full">
-        <h1 class="text-3xl font-bold text-center mb-12 font-heading text-text-primary dark:text-text-primary">FIRST Tech Challenge | Software, Drive Team &amp; Community Mentor</h1>
+      <div class="lg:w-2/3">
+        <h1 class="text-3xl font-bold text-center mb-12 font-heading text-text-primary dark:text-text-primary">FIRST Tech Challenge | REAPR</h1>
         
         <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray [&_iframe]:min-h-[600px] [&_iframe]:w-full [&_img+em]:block [&_img+em]:text-center [&_img+em]:font-bold">
-          
+          <h2 id="why-i-started-reapr">Why I started REAPR</h2>
+<p>In 2022, I tried out for my school&rsquo;s FRC team and was rejected. I still wanted to build robots, but I realized that simply finding another team was not an easy solution for everyone.</p>
+<p>The biggest barriers were not just technical. Students needed access to hardware, registration fees, software knowledge, mentors, and a path into competitive robotics. I decided to build that path myself.</p>
+<p>I founded <strong>FTC Team 22348 REAPR</strong> as a student-led community robotics program. The goal was not simply to build another competitive robot. It was to create a team where students could start with little or no robotics experience and gradually take ownership of real engineering problems.</p>
+<h2 id="building-the-team-from-scratch">Building the team from scratch</h2>
+<p>Starting a robotics team meant solving problems that had nothing to do with writing code.</p>
+<p>We needed a robot, electronics, mechanical components, registration fees, competition expenses, and a place where students could actually work. I helped raise more than <strong>$16,000</strong> through sponsorships and grants, allowing the team to purchase the equipment needed to compete without making the cost fall entirely on students.</p>
+<p>I also had to turn a group of students with different levels of experience into an engineering team.</p>
+<p>Students learned Java from scratch before progressing into drivetrain programming, mecanum kinematics, sensors, computer vision, autonomous routines, and competition strategy. Rather than keeping the most difficult technical work for myself, I used each subsystem as an opportunity to teach students how to understand and eventually maintain the code themselves.</p>
+<p>That changed the way I thought about engineering. A solution was not finished when it worked. It was finished when someone else could understand it, modify it, and build on it.</p>
+<h2 id="turning-software-into-a-learning-system">Turning software into a learning system</h2>
+<p>Software became one of the team&rsquo;s biggest opportunities to combine engineering with teaching.</p>
+<p>I developed autonomous routines in Java and taught students how the robot translated field objectives into movement. With mecanum drive, the robot could move in multiple directions without rotating first, but that flexibility also meant students had to understand how individual wheel velocities combined to produce translation and rotation.</p>
+<p>For computer vision, I developed a TensorFlow target-tracking model trained on <strong>tens of thousands of samples</strong>. The project introduced students to a complete machine-learning workflow: collecting data, training a model, evaluating predictions, and integrating those predictions into a real robot.</p>
+<p>I also built an AppSheet scouting system that turned competition observations into structured data. Instead of relying on memory between matches, we could record what other teams were doing and use that information when making drive-team and alliance decisions.</p>
+<p>The important part was not any individual program. It was showing students that software could connect directly to physical decisions made by a robot.</p>
+<h2 id="engineering-under-ftc-constraints">Engineering under FTC constraints</h2>
+<p>FTC robots operate under tight physical and software constraints. The robot has to fit within a defined size, operate with limited hardware, and make decisions quickly enough to work during a match.</p>
+<p>Those constraints became part of the team&rsquo;s learning process.</p>
+<p>Students had to understand why a theoretically correct algorithm could still fail on a physical robot. A drivetrain could behave differently because of friction. Sensors could produce noisy measurements. A path that looked correct mathematically could become unusable because of the robot&rsquo;s physical dimensions.</p>
+<p>I helped students work through these problems by breaking them into smaller engineering questions: What is the robot trying to do? What information does it have? What can the hardware actually measure? What assumptions is the algorithm making? What happens when those assumptions are wrong?</p>
+<p>This approach helped turn debugging from a frustrating part of competition into a structured engineering process.</p>
+<h2 id="from-code-to-competition-strategy">From code to competition strategy</h2>
+<p>My role eventually extended beyond software development.</p>
+<p>As a mentor and drive coach, I helped connect what we learned from software and scouting to decisions during matches. The team had to account for our own robot&rsquo;s capabilities, our alliance partners, opposing teams, and the limited amount of time available during a match.</p>
+<p>That meant teaching students to make decisions with incomplete information.</p>
+<p>A scouting system might tell us how a team had performed previously, but it could not guarantee what that team would do in the next match. A software system might work perfectly in testing but behave differently under competition conditions.</p>
+<p>The competition environment therefore became the final test of everything we had built.</p>
+<p>REAPR ultimately qualified for the <strong>2024 New Jersey State Championship</strong>, giving students the opportunity to test their engineering in a much more demanding environment.</p>
+<h2 id="measuring-the-impact-beyond-the-robot">Measuring the impact beyond the robot</h2>
+<p>The most important result of REAPR was not a particular autonomous routine or competition result.</p>
+<p>The team helped increase robotics participation in Robbinsville by <strong>30%</strong>, while giving students a lower-barrier way to enter competitive robotics.</p>
+<p>Students who initially joined without programming experience could progress from learning Java to working on autonomous systems, computer vision, drivetrain control, and competition strategy. The team also created a pathway for students to teach newer members, allowing knowledge to continue even as experienced students graduated.</p>
+<p>That made REAPR more than a robotics team. It became a system for transferring technical knowledge between students.</p>
+<h2 id="what-i-learned">What I learned</h2>
+<p>Building REAPR changed my definition of engineering.</p>
+<p>Before starting the team, I primarily thought about engineering as solving technical problems. Running REAPR showed me that engineering also involves designing systems around people: their experience levels, resources, constraints, and ability to maintain what you build.</p>
+<p>A robot that works for one competition is useful. A program that teaches fifteen students how to build the next robot can continue producing results long after that competition ends.</p>
+<p>That is what I wanted REAPR to become: a place where students could enter robotics, learn by building real systems, and eventually become the people teaching the next group.</p>
+
         </div>
       </div>
 
+      
+      
+      <div class="lg:w-1/3">
+        <div class="sticky top-24 max-h-[calc(100vh-8rem)] flex flex-col">
+          <h2 class="text-xl font-bold mb-4 text-text-primary dark:text-text-primary flex-shrink-0"></h2>
+          <div class="space-y-3 pr-2 overflow-y-auto flex-1 sidebar-scroll">
+            
+            
+          </div>
+        </div>
+      </div>
       
     </div>
   </div>

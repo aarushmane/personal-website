@@ -1,9 +1,42 @@
 {{ define "main" }}
 <div class="portfolio-shell">
     <section class="hero-grid" id="about">
-        <div class="hero-copy"><p class="eyebrow"><span class="pulse"></span> Available for thoughtful work</p><h1>{{ .Site.Params.tagline }}</h1><p class="hero-description">{{ .Site.Params.hero_description }}</p><div class="hero-actions"><a class="button button-primary" href="#projects">Explore projects <span>↗</span></a><a class="button button-quiet" href="{{ .Site.Params.resume_url_en | default "/resume.pdf" }}" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Download Resume <span>↗</span></a><a class="button button-quiet" href="#contact"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Contact</a></div><div class="hero-location"><span class="status-dot"></span>{{ .Site.Params.hero_location }} <span class="slash">/</span> Java · Python · OpenCV · ROS</div></div>
-        <figure class="hero-portrait"><img src="{{ "media/TitleProfile-optimized.jpg" | relURL }}" alt="Aarush Mane" loading="eager"><figcaption><span class="status-dot"></span> Aarush Mane <span>/</span> Computer science &amp; robotics</figcaption></figure>
+        <div class="hero-copy">
+            <p class="eyebrow"><span class="pulse"></span> Available for thoughtful work</p>
+            <h1>{{ .Site.Params.tagline }}</h1>
+            <p class="hero-description">{{ .Site.Params.hero_description }}</p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="#projects">Explore projects <span>↗</span></a>
+                <a class="button button-quiet" href="{{ .Site.Params.resume_url_en | default "/resume.pdf" }}" target="_blank" rel="noopener noreferrer">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    Download Resume <span>↗</span>
+                </a>
+                <a class="button button-quiet" href="#contact">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Contact
+                </a>
+            </div>
+            <div class="hero-location">
+                <span class="status-dot"></span>{{ .Site.Params.hero_location }}
+                <span class="slash">/</span> Java · Python · OpenCV · ROS
+            </div>
+        </div>
+
+        <figure class="hero-portrait">
+            <img src="{{ "media/TitleProfile-optimized.jpg" | relURL }}" alt="Aarush Mane" loading="eager">
+            <figcaption><span class="status-dot"></span> Aarush Mane <span>/</span> Computer science &amp; robotics</figcaption>
+        </figure>
     </section>
+
     <section class="profile-section" id="about" aria-labelledby="about-title">
         <p class="profile-kicker">About me</p>
         <h2 id="about-title">I like difficult problems and useful results.</h2>
@@ -43,31 +76,164 @@
         </div>
     </section>
 
-    <section class="section-block" id="education"><div class="section-heading"><div><p class="eyebrow">01 / Education</p><h2>A short academic snapshot.</h2></div><span class="section-note"></span></div><div class="education-grid">{{ range where .Site.RegularPages "Params.group" "education" }}<article class="info-card"><p class="card-meta">{{ .Params.period }}</p><h3>{{ .Title }}</h3><p class="muted">{{ .Params.institution }}</p><p>{{ .Params.summary | markdownify }}</p></article>{{ end }}</div></section>
-
-    <section class="section-block" id="projects"><div class="section-heading"><div><p class="eyebrow">02 / Projects</p><h2>Systems with a job to do.</h2></div></div><div class="project-bento">
-            {{ range where .Site.RegularPages "Params.group" "project" }}
-                <article class="project-tile"><div class="tile-top"><span class="tag">{{ .Params.category | default "Project" }}</span><span class="tile-arrow">↗</span></div><div><p class="card-meta">{{ .Params.season | default .Params.period | default "Selected work" }}</p><h3>{{ .Title }}</h3><p>{{ .Params.summary | markdownify }}</p></div><div class="tile-actions"><a class="tile-footer" href="{{ .RelPermalink }}">Case study <span>→</span></a>{{ with .Params.external }}<a class="tile-footer tile-footer-external" href="{{ . }}" target="_blank" rel="noopener noreferrer">Project link <span>↗</span></a>{{ end }}</div></article>
+    <section class="section-block" id="education">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">01 / Education</p>
+                <h2>A short academic snapshot.</h2>
+            </div>
+            <span class="section-note"></span>
+        </div>
+        <div class="education-grid">
+            {{ range where .Site.RegularPages "Params.group" "education" }}
+                <article class="info-card">
+                    <p class="card-meta">{{ .Params.period }}</p>
+                    <h3>{{ .Title }}</h3>
+                    <p class="muted">{{ .Params.institution }}</p>
+                    <p>{{ .Params.summary | markdownify }}</p>
+                </article>
             {{ end }}
-        </div></section>
+        </div>
+    </section>
 
-    <section class="section-block research-block" id="research"><div class="section-heading"><div><p class="eyebrow">03 / Research</p><h2>A published study built from simulation and testing.</h2></div></div><article class="research-card">
+    <section class="section-block" id="projects">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">02 / Projects</p>
+                <h2>Systems with a job to do.</h2>
+            </div>
+        </div>
+
+        <div class="project-bento">
+            {{ range where .Site.RegularPages "Params.group" "project" }}
+                <article class="project-tile">
+                    <div class="tile-top">
+                        <span class="tag">{{ .Params.category | default "Project" }}</span>
+                        <span class="tile-arrow">↗</span>
+                    </div>
+
+                    <div>
+                        <p class="card-meta">{{ .Params.season | default .Params.period | default "Selected work" }}</p>
+                        <h3>{{ .Title }}</h3>
+                        <p>{{ .Params.summary | markdownify }}</p>
+                    </div>
+
+                    <div class="tile-actions">
+                        <a class="tile-footer" href="{{ .RelPermalink }}">
+                            Case study <span>→</span>
+                        </a>
+                        {{ with .Params.external }}
+                            <a class="tile-footer tile-footer-external" href="{{ . }}" target="_blank" rel="noopener noreferrer">
+                                Project link <span>↗</span>
+                            </a>
+                        {{ end }}
+                    </div>
+                </article>
+            {{ end }}
+        </div>
+    </section>
+
+    <section class="section-block research-block" id="research">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">03 / Research</p>
+                <h2>A published study built from simulation and testing.</h2>
+            </div>
+        </div>
+
+        <article class="research-card">
             <p class="project-card-meta">IEEE MIT Undergraduate Research Technology Conference | Presented October 2025</p>
             <h3>PID Control Optimization and Trajectory Tracking for Autonomous Differential Drive Robots</h3>
             <p>I co-authored a non-linear PID controller with moving integral windows, velocity-dependent target yaws, and anti-windup limits. We compared A* and Dijkstra path generation, modeled LiDAR obstacle avoidance in ROS GazeboSim, and tested the controller with TurtleBot Vicon tracking and matched-pairs tests at p &lt; 0.01.</p>
+
             <div class="link-row">
-                <a class="button button-small" href="https://ieeexplore.ieee.org/document/11533106" target="_blank" rel="noopener noreferrer">IEEE paper</a><a class="button button-small" href="https://drive.google.com/file/d/18ED5a_aI4rQM_JSxM_MhHVoMt1Xh2ltn/view" target="_blank" rel="noopener noreferrer">Extended Paper PDF</a><a class="button button-small" href="https://youtu.be/6KWDjNa425o" target="_blank" rel="noopener noreferrer">Symposium video</a>
+                <a class="button button-small" href="https://ieeexplore.ieee.org/document/11533106" target="_blank" rel="noopener noreferrer">IEEE paper</a>
+                <a class="button button-small" href="https://drive.google.com/file/d/18ED5a_aI4rQM_JSxM_MhHVoMt1Xh2ltn/view" target="_blank" rel="noopener noreferrer">Extended Paper PDF</a>
+                <a class="button button-small" href="https://youtu.be/6KWDjNa425o" target="_blank" rel="noopener noreferrer">Symposium video</a>
             </div>
-            <a class="tile-footer research-case-link" href="{{ "research/ieee-pid-control/" | relURL }}">Case study <span>→</span></a>
-        </article></section>
 
-    <section class="section-block" id="civic-service"><div class="section-heading"><div><p class="eyebrow">04 / Civic Service</p><h2>Technical work that helps people and teams.</h2></div><span class="section-note"></span></div><div class="service-grid">
-            {{ range sort (where .Site.RegularPages "Params.group" "civic") "Params.order" }}
-                <article class="service-card {{ with .Params.media }}service-card-with-media{{ end }}">{{ with .Params.media }}<div class="service-gallery">{{ range . }}<a href="{{ .src | relURL }}" target="_blank" rel="noopener noreferrer"><img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy"></a>{{ end }}</div>{{ end }}<p class="card-meta">{{ .Params.period | default .Params.eyebrow }}</p><h3>{{ .Title }}</h3><p class="muted">{{ .Params.organization }}</p><ul>{{ range .Params.highlights }}<li>{{ . | markdownify }}</li>{{ end }}</ul></article>
+            <a class="tile-footer research-case-link" href="{{ "research/ieee-pid-control/" | relURL }}">
+                Case study <span>→</span>
+            </a>
+        </article>
+    </section>
+
+    <section class="section-block civic-service-block" id="civic-service">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">04 / Civic Service</p>
+                <h2>Building opportunities, not just robots.</h2>
+            </div>
+        </div>
+
+        {{ range sort (where .Site.RegularPages "Params.group" "civic") "Params.order" }}
+            <article class="civic-feature-card">
+                <div class="civic-feature-main">
+                    <div class="civic-feature-heading">
+                        <div>
+                            <p class="card-meta">{{ .Params.eyebrow }}</p>
+                            <h3>{{ .Title }}</h3>
+                            <p class="civic-role">{{ .Params.period }} · {{ .Params.organization }}</p>
+                        </div>
+
+                        <span class="civic-feature-number">01</span>
+                    </div>
+
+                    <p class="civic-summary">{{ .Params.summary | markdownify }}</p>
+
+                    <div class="civic-highlights">
+                        {{ range .Params.highlights }}
+                            <div class="civic-highlight">
+                                <span class="civic-highlight-dot"></span>
+                                <span>{{ . | markdownify }}</span>
+                            </div>
+                        {{ end }}
+                    </div>
+
+                    <div class="tile-actions">
+                        <a class="tile-footer civic-case-link" href="{{ .RelPermalink }}">
+                            Full case study <span>→</span>
+                        </a>
+                        {{ with .Params.first_url }}
+                            <a class="button button-small" href="{{ . }}" target="_blank" rel="noopener noreferrer">
+                                FIRST team page ↗
+                            </a>
+                        {{ end }}
+                    </div>
+                </div>
+
+                {{ with .Params.media }}
+                    <div class="civic-feature-media">
+                        {{ range first 1 . }}
+                            <figure>
+                                <img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy">
+                                {{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+                            </figure>
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </article>
+        {{ end }}
+    </section>
+
+    <section class="section-block recognition-block">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">05 / Awards</p>
+                <h2>Awards and milestones.</h2>
+            </div>
+        </div>
+
+        <div class="recognition-grid">
+            {{ range where .Site.RegularPages "Params.group" "award" }}
+                <article class="recognition-item">
+                    <p class="card-meta">{{ .Params.year }}</p>
+                    <h3>{{ .Title }}</h3>
+                    <p>{{ .Params.summary | markdownify }}</p>
+                </article>
             {{ end }}
-        </div></section>
-
-    <section class="section-block recognition-block"><div class="section-heading"><div><p class="eyebrow">05 / Awards</p><h2>Awards and milestones.</h2></div></div><div class="recognition-grid">{{ range where .Site.RegularPages "Params.group" "award" }}<article class="recognition-item"><p class="card-meta">{{ .Params.year }}</p><h3>{{ .Title }}</h3><p>{{ .Params.summary | markdownify }}</p></article>{{ end }}</div></section>
+        </div>
+    </section>
 
     <section class="contact-panel" id="contact">
         <div class="contact-copy">
@@ -75,21 +241,25 @@
             <h2>Have a problem worth solving?</h2>
             <p>Reach out about robotics, research, software, or potential technical partnerships.</p>
         </div>
+
         <div class="contact-buttons">
             <a class="button button-primary" href="mailto:{{ .Site.Params.email }}">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
                 {{ .Site.Params.email }} <span>↗</span>
             </a>
+
             <a class="button button-quiet" href="{{ .Site.Params.github_url }}" target="_blank" rel="noopener noreferrer">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 GitHub <span>↗</span>
             </a>
+
             <a class="button button-quiet" href="{{ .Site.Params.linkedin_url }}" target="_blank" rel="noopener noreferrer">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                 LinkedIn <span>↗</span>
             </a>
+
             <a class="button button-quiet" href="{{ .Site.Params.ieee_url }}" target="_blank" rel="noopener noreferrer">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path><path d="M9 7h6"></path><path d="M9 11h6"></path></svg>
                 IEEE Xplore <span>↗</span>
             </a>
         </div>
