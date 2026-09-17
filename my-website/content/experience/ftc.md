@@ -5,7 +5,7 @@ order: 1
 eyebrow: "FIRST Tech Challenge Team 22348 | Founder, Mentor & Drive Coach"
 period: "October 2022 - June 2026"
 organization: "FIRST Tech Challenge Team 22348 | REAPR"
-summary: "I founded REAPR after being rejected from my school's FRC team, building a student-led robotics program that combined competitive engineering with a deliberate effort to make robotics more accessible."
+summary: "I founded REAPR to expand access to competitive robotics in my community, then grew from team founder to mentor and drive coach as the program developed."
 case_study: true
 case_label: "Community Robotics Case Study"
 meta_venue: "FIRST Tech Challenge Team 22348"
@@ -13,93 +13,109 @@ meta_methods: "Java · TensorFlow · AppSheet · Mecanum"
 meta_format: "Founder · Mentor · Drive Coach"
 first_url: "https://ftc-events.firstinspires.org/2022/team/22348"
 highlights:
-  - "Founded and mentored a **15-member** community robotics team, teaching students Java, computer vision, autonomous navigation, and competition strategy."
-  - "Raised **$16,000+** in sponsorships and grants to cover registration, electronics, mechanical parts, and competition costs."
-  - "Built a TensorFlow target-tracking workflow trained on **tens of thousands of samples** and an AppSheet scouting system for competition decisions."
-  - "Helped grow robotics participation in Robbinsville by **30%** through school and community outreach and qualified for the **2024 New Jersey State Championship**."
+  - "Founded REAPR to expand the robotics pipeline in Robbinsville, growing a student-led team into a program serving dozens of students."
+  - "Secured **$16,000+** in sponsorships and grants to cover GoBILDA parts, electronics, registration, and competition costs."
+  - "Built and taught students through Java, autonomous navigation, computer vision, and a TensorFlow target-tracking model trained on **tens of thousands of samples**."
+  - "Helped grow robotics participation in Robbinsville by **30%** and qualified for the **2024 New Jersey State Championship**."
 media:
   - src: "media/FTC1.JPG"
     alt: "FIRST Tech Challenge Team 22348 REAPR with its robot"
-    caption: "REAPR combined competitive robotics with a student-led mentorship model."
+    caption: "REAPR grew from a community robotics initiative into a competitive student-led team."
   - src: "media/FTC2.JPG"
     alt: "FIRST Tech Challenge Team 22348 REAPR competing with its robot"
-    caption: "Beyond mentorship, I was the lead software engineer and drive coach (coordinating all match strategy and alliance seleciton decisions) on the team for two seasons. "
+    caption: "After joining FRC, I returned to REAPR as a mentor and later served as lead software developer and drive coach."
 ---
 
-## Why I started REAPR
+## Expanding the robotics pipeline
 
-In 2022, I tried out for my school's FRC team and was rejected. I still wanted to build robots, but I realized that simply finding another team was not an easy solution for everyone.
+“Autonomous in 3-2-1-go!”
 
-The biggest barriers were not just technical. Students needed access to hardware, registration fees, software knowledge, mentors, and a path into competitive robotics. I decided to build that path myself.
+A small robot begins moving across a mat scattered with cones and poles. For the students around it, the match lasts only a few minutes. For the team behind it, every movement represents weeks of learning, debugging, and building.
 
-I founded **FTC Team 22348 REAPR** as a student-led community robotics program. The goal was not simply to build another competitive robot. It was to create a team where students could start with little or no robotics experience and gradually take ownership of real engineering problems.
+I founded **FIRST Tech Challenge Team 22348 REAPR** because I wanted to expand the robotics pipeline in my community. Competitive robotics offered students a way to combine programming, engineering, and teamwork, but getting started could be difficult without access to equipment, mentors, or funding.
 
-## Building the team from scratch
+REAPR was my attempt to create that opportunity.
 
-Starting a robotics team meant solving problems that had nothing to do with writing code.
+The goal was not simply to build another robot. It was to create a team where students could learn robotics by actually building, programming, testing, and competing with a machine of their own.
 
-We needed a robot, electronics, mechanical components, registration fees, competition expenses, and a place where students could actually work. I helped raise more than **$16,000** through sponsorships and grants, allowing the team to purchase the equipment needed to compete without making the cost fall entirely on students.
+## Building the opportunity
 
-I also had to turn a group of students with different levels of experience into an engineering team.
+Starting a robotics team required much more than writing code.
 
-Students learned Java from scratch before progressing into drivetrain programming, mecanum kinematics, sensors, computer vision, autonomous routines, and competition strategy. Rather than keeping the most difficult technical work for myself, I used each subsystem as an opportunity to teach students how to understand and eventually maintain the code themselves.
+We needed GoBILDA parts, electronics, registration fees, competition expenses, and the infrastructure to support a functioning team. I helped secure more than **$16,000 in grants and sponsorships**, including support from State Farm and local businesses.
 
-That changed the way I thought about engineering. A solution was not finished when it worked. It was finished when someone else could understand it, modify it, and build on it.
+That funding gave students access to the hardware they needed to learn.
 
-## Turning software into a learning system
+From there, I helped build the technical foundation of the team. Students learned Java from scratch before moving into drivetrain programming, mecanum kinematics, sensors, computer vision, autonomous routines, and competition strategy.
 
-Software became one of the team's biggest opportunities to combine engineering with teaching.
+The early work was often messy. A robot would fail to move the way we expected. An autonomous routine would break because of a small assumption. A student would spend an entire meeting trying to understand why a few lines of Java were not behaving correctly.
 
-I developed autonomous routines in Java and taught students how the robot translated field objectives into movement. With mecanum drive, the robot could move in multiple directions without rotating first, but that flexibility also meant students had to understand how individual wheel velocities combined to produce translation and rotation.
+Those moments became the real classroom.
 
-For computer vision, I developed a TensorFlow target-tracking model trained on **tens of thousands of samples**. The project introduced students to a complete machine-learning workflow: collecting data, training a model, evaluating predictions, and integrating those predictions into a real robot.
+## From building robots to teaching robotics
 
-I also built an AppSheet scouting system that turned competition observations into structured data. Instead of relying on memory between matches, we could record what other teams were doing and use that information when making drive-team and alliance decisions.
+The next year, as I joined my school's **FIRST Robotics Competition team**, my role with REAPR changed.
 
-The important part was not any individual program. It was showing students that software could connect directly to physical decisions made by a robot.
+I became a mentor.
 
-## Engineering under FTC constraints
+That shift changed how I viewed robotics. I was no longer only thinking about whether I could solve a problem. I had to think about whether someone else could understand the solution well enough to solve the next problem themselves.
 
-FTC robots operate under tight physical and software constraints. The robot has to fit within a defined size, operate with limited hardware, and make decisions quickly enough to work during a match.
+Hours spent working through tutorials and coding workshops became lessons for younger team members.
 
-Those constraints became part of the team's learning process.
+A student getting a TensorFlow model to recognize its target for the first time could be more rewarding than getting the robot to work myself. So could watching someone finally understand why an autonomous routine was failing, make a change, and see the robot execute successfully.
 
-Students had to understand why a theoretically correct algorithm could still fail on a physical robot. A drivetrain could behave differently because of friction. Sensors could produce noisy measurements. A path that looked correct mathematically could become unusable because of the robot's physical dimensions.
+Robotics became less about the robot itself and more about the people learning to build it.
 
-I helped students work through these problems by breaking them into smaller engineering questions: What is the robot trying to do? What information does it have? What can the hardware actually measure? What assumptions is the algorithm making? What happens when those assumptions are wrong?
+## Teaching through software
 
-This approach helped turn debugging from a frustrating part of competition into a structured engineering process.
+Software became one of the main ways I connected technical work with mentorship.
 
-## From code to competition strategy
+I developed autonomous routines in Java and taught students how field objectives could be translated into movements for a mecanum-drive robot. Students learned that programming a physical robot was different from programming a computer. Friction, battery voltage, sensor noise, mechanical tolerances, and imperfect measurements could all turn a theoretically correct solution into a failed routine.
 
-My role eventually extended beyond software development.
+I also developed a **TensorFlow target-tracking model trained on tens of thousands of samples**.
 
-As a mentor and drive coach, I helped connect what we learned from software and scouting to decisions during matches. The team had to account for our own robot's capabilities, our alliance partners, opposing teams, and the limited amount of time available during a match.
+The project gave students exposure to an entire machine-learning workflow. They could collect data, train a model, evaluate its predictions, and then see those predictions affect the behavior of a physical robot.
 
-That meant teaching students to make decisions with incomplete information.
+I also built an **AppSheet scouting system** that turned observations from competitions into structured data. Instead of relying entirely on memory between matches, we could record team performance and use that information when thinking about strategy and alliance decisions.
 
-A scouting system might tell us how a team had performed previously, but it could not guarantee what that team would do in the next match. A software system might work perfectly in testing but behave differently under competition conditions.
+Each project became both an engineering problem and a teaching opportunity.
 
-The competition environment therefore became the final test of everything we had built.
+## Learning from competition
 
-REAPR ultimately qualified for the **2024 New Jersey State Championship**, giving students the opportunity to test their engineering in a much more demanding environment.
+As I became more involved in REAPR, my role eventually expanded beyond mentorship and software.
 
-## Measuring the impact beyond the robot
+I became a **drive coach**, helping connect our software, scouting data, and understanding of other teams to decisions during matches.
 
-The most important result of REAPR was not a particular autonomous routine or competition result.
+Competition introduced a different kind of engineering problem. We rarely had complete information. Our robot had limitations. Alliance partners had different strengths. Opposing teams could change their strategy from one match to the next.
 
-The team helped increase robotics participation in Robbinsville by **30%**, while giving students a lower-barrier way to enter competitive robotics.
+A scouting system could provide useful evidence, but it could never guarantee what would happen in the next match.
 
-Students who initially joined without programming experience could progress from learning Java to working on autonomous systems, computer vision, drivetrain control, and competition strategy. The team also created a pathway for students to teach newer members, allowing knowledge to continue even as experienced students graduated.
+That meant learning how to make decisions quickly while understanding uncertainty.
 
-That made REAPR more than a robotics team. It became a system for transferring technical knowledge between students.
+The team ultimately qualified for the **2024 New Jersey State Championship**, giving students the opportunity to take everything they had learned into a much more competitive environment.
 
-## What I learned
+## Growing the robotics community
 
-Building REAPR changed my definition of engineering.
+The impact of REAPR extended beyond competition.
 
-Before starting the team, I primarily thought about engineering as solving technical problems. Running REAPR showed me that engineering also involves designing systems around people: their experience levels, resources, constraints, and ability to maintain what you build.
+Through the team's growth and outreach, robotics participation in Robbinsville increased by **over 30% across the next four graduating classes, 2026 through 2029**.
 
-A robot that works for one competition is useful. A program that teaches fifteen students how to build the next robot can continue producing results long after that competition ends.
+Students who entered with little programming experience could eventually work with Java, autonomous systems, computer vision, drivetrain control, and competition strategy. More importantly, students who learned those skills could pass them on to newer members.
 
-That is what I wanted REAPR to become: a place where students could enter robotics, learn by building real systems, and eventually become the people teaching the next group.
+That created a cycle.
+
+Students joined the team to learn robotics. They became comfortable enough to take ownership of technical work. Then they became capable of teaching someone else.
+
+The team became a pathway rather than a single competition season.
+
+## What REAPR taught me
+
+Founding REAPR taught me that engineering is not only about building systems. It is also about building opportunities for other people to understand those systems.
+
+A successful autonomous routine matters. A working computer-vision model matters. A well-designed scouting system matters.
+
+But watching a student build their first working model, debug their first autonomous routine, or confidently explain a piece of code to another teammate lasts much longer than any individual match.
+
+REAPR started as an effort to expand access to robotics in my community. It grew into a team where students could build real systems, compete with them, and eventually teach the next group how to build their own.
+
+That is the part of REAPR I am proudest of.
