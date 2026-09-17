@@ -34,7 +34,17 @@ a { color: inherit; text-decoration: none; }
 .hero-grid { align-items: center; display: grid; gap: clamp(3rem, 8vw, 8rem); grid-template-columns: minmax(0, 1.1fr) minmax(300px, .9fr); min-height: 650px; padding: 5rem 0 4rem; }
 .eyebrow { color: var(--cyan); font-family: 'DM Mono', monospace; font-size: .72rem; letter-spacing: .08em; margin: 0 0 1rem; text-transform: uppercase; }
 .pulse, .status-dot { background: var(--green); border-radius: 50%; display: inline-block; height: .55rem; margin-right: .4rem; vertical-align: middle; width: .55rem; }
-.hero-copy h1 { font-size: clamp(3rem, 6vw, 6.3rem); letter-spacing: -.075em; line-height: .98; margin: 0; max-width: 780px; }
+.hero-copy h1 {
+  font-size: clamp(3rem, 6vw, 6.3rem);
+  letter-spacing: -.075em;
+  line-height: .98;
+  margin: 0;
+  max-width: 780px;
+}
+
+.hero-tagline span {
+  display: block;
+}
 .hero-description { color: var(--muted); font-size: clamp(1.05rem, 1.7vw, 1.3rem); margin: 2rem 0 0; max-width: 620px; }
 .hero-actions, .link-row { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
 .button { border: 1px solid var(--line); border-radius: 7px; display: inline-flex; font-size: .82rem; font-weight: 800; gap: .5rem; padding: .7rem 1rem; transition: background .2s, border-color .2s, transform .2s; }

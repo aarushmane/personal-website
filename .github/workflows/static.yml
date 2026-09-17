@@ -38,6 +38,9 @@ jobs:
         working-directory: my-website
         run: hugo --gc --minify
 
+      - name: Copy media files
+        run: cp -R my-website/media my-website/public/media
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
