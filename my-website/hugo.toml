@@ -25,7 +25,7 @@ enableEmoji = true
   github_text = "github.com/aarushmane"
   linkedin_url = "https://www.linkedin.com/in/aarush-mane/"
   ieee_url = "https://ieeexplore.ieee.org/author/120619555333829"
-  resume_url_en = "/resume.pdf"
+  resume_url_en = "/profile/resume.pdf"
   resume_label = "Download resume"
   copyright = "2026 | Aarush Mane"
 
@@ -76,7 +76,7 @@ enableEmoji = true
 
   [[menu.social]]
     name = "Download resume"
-    url = "/resume.pdf"
+    url = "/profile/resume.pdf"
     weight = 3
     [menu.social.params]
       icon = "link"
