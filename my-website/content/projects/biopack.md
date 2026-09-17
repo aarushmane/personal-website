@@ -6,7 +6,7 @@ period: "iStart Valley | Jan 2025 - Jun 2025"
 summary: "A BioPack concept, market analysis, and venture pitch that earned Global Semifinalist placement. It was a proposal, not a launched company."
 date: 2025-06-01
 document:
-  src: "/media/BioPackPitch.pdf"
+  src: "media/BioPackPitch.pdf"
   label: "BioPack pitch deck"
 ---
 

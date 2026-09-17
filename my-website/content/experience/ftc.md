@@ -18,10 +18,10 @@ highlights:
   - "Built a TensorFlow target-tracking workflow trained on **tens of thousands of samples** and an AppSheet scouting system for competition decisions."
   - "Helped grow robotics participation in Robbinsville by **30%** through school and community outreach and qualified for the **2024 New Jersey State Championship**."
 media:
-  - src: "/media/FTC1.JPG"
+  - src: "media/FTC1.JPG"
     alt: "FIRST Tech Challenge Team 22348 REAPR with its robot"
     caption: "REAPR combined competitive robotics with a student-led mentorship model."
-  - src: "/media/FTC2.JPG"
+  - src: "media/FTC2.JPG"
     alt: "FIRST Tech Challenge Team 22348 REAPR competing with its robot"
     caption: "Beyond mentorship, I was the lead software engineer and drive coach (coordinating all match strategy and alliance seleciton decisions) on the team for two seasons. "
 ---

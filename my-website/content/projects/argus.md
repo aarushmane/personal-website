@@ -7,10 +7,10 @@ period: "FIRST Robotics Competition Team 2590 | 2026"
 date: 2026-06-01
 image: "/images/project-placeholder.svg"
 media:
-  - src: "/media/Argus1.jpg"
+  - src: "media/Argus1.jpg"
     alt: "Argus Panoptes chatbot interface in Slack"
     caption: "Argus delivers scouting and match insights inside the team’s existing Slack workflow."
-  - src: "/media/Argus2.jpg"
+  - src: "media/Argus2.jpg"
     alt: "2026 Innovation in Control Award"
     caption: "Innovation in Control recognition for the autonomous systems and analytics work behind Argus."
 ---

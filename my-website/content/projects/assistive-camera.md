@@ -7,10 +7,10 @@ summary: "A Python and Streamlit assistive-camera workflow used successfully by 
 date: 2024-05-01
 external: "https://github.com/aarushmane/AI-Assistive-Camera-with-Email-Sender"
 media:
-  - src: "/media/AICam1.JPG"
+  - src: "media/AICam1.JPG"
     alt: "AI Assistive Camera project display"
     caption: "A live demonstration of the assistive-camera workflow at the 2024 CS Fair."
-  - src: "/media/AICam2.HEIC"
+  - src: "media/AICam2.HEIC"
     alt: "Students using the AI Assistive Camera at the CS Fair"
     caption: "The project in use during the event, where it served more than 200 participants."
 ---
