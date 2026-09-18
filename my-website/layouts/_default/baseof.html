@@ -12,10 +12,10 @@
     <header class="site-nav">
         <a class="brand" href="{{ "/" | relURL }}"><span class="brand-mark">AM</span><span>Aarush Mane</span></a>
         <nav aria-label="Main navigation">
-            <a href="{{ "/#about" | relURL }}">About</a>
-            <a href="{{ "/#projects" | relURL }}">Projects</a>
-            <a href="{{ "/#research" | relURL }}">Research</a>
-            <a href="{{ "/#civic-service" | relURL }}">Civic Service</a>
+            <a href="{{ .Site.Home.RelPermalink }}#about">About</a>
+            <a href="{{ .Site.Home.RelPermalink }}#projects">Projects</a>
+            <a href="{{ .Site.Home.RelPermalink }}#research">Research</a>
+            <a href="{{ .Site.Home.RelPermalink }}#civic-service">Civic Service</a>
         </nav>
         <div class="nav-actions">
             <a class="nav-icon" href="{{ .Site.Params.github_url }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
